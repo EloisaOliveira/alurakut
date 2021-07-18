@@ -67,7 +67,7 @@ export default function Home() {
       fetch('https://graphql.datocms.com/', {
         method: 'POST',
         headers: {
-          'Authorization': '68ddd008a450076d990d3b94366f65',
+          'Authorization': process.env.REACT_APP_AUTHORIZATION,
           'Content-Type': 'application/json',
           'Accept': 'application/json',
         },
